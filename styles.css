@@ -1,83 +1,138 @@
-/* Basic Reset */
+/* Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  color: #333;
-  line-height: 1.6;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
-/* Header */
-header {
-  background-color: #2d7fd8;
-  color: #fff;
-  padding: 1.5rem;
-  text-align: center;
+#navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-/* Main Content */
-main {
-  flex: 1;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.logo {
+    font-size: 1.5rem;
 }
 
-/* Call Button */
-#callButton {
-  background-color: #ff0000;
-  color: #fff;
-  border: none;
-  padding: 1rem 2rem;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-bottom: 2rem;
+.menu {
+    display: flex;
+    gap: 1rem;
 }
 
-#callButton:hover {
-  background-color: #cc0000;
+.menu li {
+    list-style: none;
 }
 
-/* Services Section */
-section {
-  text-align: center;
-  width: 100%;
-  max-width: 600px;
+.menu a {
+    color: white;
+    text-decoration: none;
 }
 
-section h2 {
-  margin-bottom: 1rem;
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-section ul {
-  list-style: none;
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
 }
 
-section li {
-  margin: 0.5rem 0;
+.call-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
-/* Footer */
-footer {
-  background-color: #f4f4f4;
-  padding: 1rem;
-  text-align: center;
-  font-size: 0.9rem;
+.services {
+    padding: 2rem;
+    text-align: center;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  #callButton {
+.service {
+    margin: 1rem;
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+}
+
+.service img {
+    width: 100px;
+    height: 100px;
+}
+
+.more-button {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.contact {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     font-size: 1.2rem;
-    padding: 0.8rem 1.5rem;
-  }
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu.active {
+        display: flex;
+    }
 }
