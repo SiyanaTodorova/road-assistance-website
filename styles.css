@@ -10,6 +10,7 @@ body {
     line-height: 1.6;
 }
 
+/* Navbar */
 #navbar {
     background-color: #333;
     color: #fff;
@@ -26,20 +27,6 @@ body {
     font-size: 1.5rem;
 }
 
-.menu {
-    display: flex;
-    gap: 1rem;
-}
-
-.menu li {
-    list-style: none;
-}
-
-.menu a {
-    color: white;
-    text-decoration: none;
-}
-
 .menu-toggle {
     display: none;
     font-size: 1.5rem;
@@ -49,10 +36,56 @@ body {
     cursor: pointer;
 }
 
+/* Overlay Menu */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.overlay-content a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay-content a:hover {
+    color: #f1f1f1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2.5rem;
+    color: white;
+}
+
+/* Hero Section */
 .hero {
     text-align: center;
-    padding: 2rem;
+    padding: 3rem;
     background-color: #f4f4f4;
+}
+
+.hero-logo {
+    width: 120px;
 }
 
 .call-button {
@@ -64,23 +97,30 @@ body {
     border: none;
     border-radius: 5px;
     text-decoration: none;
+    font-weight: bold;
 }
 
+/* Services Section */
 .services {
     padding: 2rem;
     text-align: center;
+    background-color: #f9f9f9;
 }
 
-.service {
+.service-card {
     margin: 1rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     display: inline-block;
-    width: 250px;
+    width: 200px;
     text-align: center;
 }
 
-.service img {
-    width: 100px;
-    height: 100px;
+.service-card img {
+    width: 80px;
+    height: 80px;
 }
 
 .more-button {
@@ -94,9 +134,11 @@ body {
     text-decoration: none;
 }
 
+/* Contact Section */
 .contact {
     padding: 2rem;
-    background-color: #f4f4f4;
+    background-color: #333;
+    color: #fff;
     text-align: center;
 }
 
@@ -114,6 +156,7 @@ body {
     font-size: 1.2rem;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 1rem;
@@ -123,16 +166,11 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .menu {
-        display: none;
-        flex-direction: column;
-    }
-
     .menu-toggle {
         display: block;
     }
 
-    .menu.active {
-        display: flex;
+    .menu {
+        display: none;
     }
 }
