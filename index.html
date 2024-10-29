@@ -1,35 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Road Assistance Service</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Assistance MAXI 24/7</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Road Assistance Service</h1>
-    <p>Your reliable partner in any roadside emergency.</p>
-  </header>
+    <!-- Navigation Menu -->
+    <nav id="navbar">
+        <div class="logo">Road Assistance MAXI</div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="menu">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-  <main>
-    <button id="callButton" onclick="window.location.href='tel:+1234567890'">
-      Call for Assistance
-    </button>
-    <section>
-      <h2>Our Services</h2>
-      <ul>
-        <li>Towing</li>
-        <li>Flat Tire Change</li>
-        <li>Battery Jump Start</li>
-        <li>Lockout Services</li>
-        <li>Fuel Delivery</li>
-      </ul>
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Road Assistance MAXI 24/7</h1>
+        <p>Available 24/7 in Sofia and nearby regions.</p>
+        <a href="tel:+359894303029" class="call-button">📞 +359 894 30 30 29</a>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <img src="towing.png" alt="Towing">
+            <h3>Towing</h3>
+            <p>For all types of vehicles up to 5 tons across the country.</p>
+            <a href="#" class="more-button">Learn More</a>
+        </div>
+        <div class="service">
+            <img src="battery.png" alt="Battery Jump Start">
+            <h3>Battery Jump Start</h3>
+            <p>Get your battery boosted whenever you need it.</p>
+            <a href="#" class="more-button">Learn More</a>
+        </div>
+        <!-- Add more services as needed -->
     </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2024 Road Assistance Service. All rights reserved.</p>
-  </footer>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <div class="info-item">
+                <span>📍</span>
+                <p>Sofia, Bulgaria</p>
+            </div>
+            <div class="info-item">
+                <span>📞</span>
+                <p>0894 30 30 29</p>
+            </div>
+            <div class="info-item">
+                <span>📧</span>
+                <p>office@putnapomoshtmaxi.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Road Assistance MAXI. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
