@@ -8,6 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 /* Navbar */
@@ -36,8 +37,8 @@ body {
     cursor: pointer;
 }
 
-/* Overlay Menu */
-.overlay {
+/* Sidebar */
+.sidebar {
     height: 100%;
     width: 0;
     position: fixed;
@@ -47,25 +48,20 @@ body {
     background-color: rgba(0, 0, 0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
+    padding-top: 60px;
 }
 
-.overlay-content {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-}
-
-.overlay-content a {
-    padding: 8px;
+.sidebar a {
+    padding: 10px 15px;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #fff;
     display: block;
     transition: 0.3s;
+    text-align: center;
 }
 
-.overlay-content a:hover {
+.sidebar a:hover {
     color: #f1f1f1;
 }
 
