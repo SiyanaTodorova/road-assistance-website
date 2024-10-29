@@ -7,13 +7,30 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    overflow-x: hidden;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #1A1A1A;
+    color: #fff;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar .social span {
+    margin-right: 10px;
+}
+
+.top-bar .contact-info a {
+    color: #fff;
+    text-decoration: none;
 }
 
 /* Navbar */
 #navbar {
-    background-color: #333;
+    background-color: #003366;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -24,8 +41,37 @@ body {
     z-index: 1000;
 }
 
-.logo {
-    font-size: 1.5rem;
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.call-now .call-button {
+    background-color: #FFD700;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.call-now .call-button i {
+    margin-right: 5px;
 }
 
 .menu-toggle {
@@ -75,20 +121,28 @@ body {
 
 /* Hero Section */
 .hero {
-    text-align: center;
-    padding: 3rem;
     background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem 10%;
+    text-align: left;
 }
 
-.hero-logo {
-    width: 120px;
+.hero-content {
+    max-width: 500px;
 }
 
-.call-button {
+.hero h1 {
+    font-size: 2.5rem;
+    color: #003366;
+}
+
+.cta-button {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.8rem 2rem;
-    background-color: #007BFF;
+    background-color: #003366;
     color: white;
     border: none;
     border-radius: 5px;
@@ -96,77 +150,27 @@ body {
     font-weight: bold;
 }
 
-/* Services Section */
-.services {
-    padding: 2rem;
-    text-align: center;
-    background-color: #f9f9f9;
-}
-
-.service-card {
-    margin: 1rem;
-    padding: 1.5rem;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    display: inline-block;
-    width: 200px;
-    text-align: center;
-}
-
-.service-card img {
-    width: 80px;
-    height: 80px;
-}
-
-.more-button {
-    display: inline-block;
-    margin-top: 0.5rem;
-    padding: 0.5rem 1rem;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-/* Contact Section */
-.contact {
-    padding: 2rem;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-}
-
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-.info-item {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 1.2rem;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: #fff;
+.hero-image {
+    max-width: 400px;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
     .menu-toggle {
         display: block;
     }
 
-    .menu {
-        display: none;
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 250px;
     }
 }
