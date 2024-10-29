@@ -1,56 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Road Assistance MAXI 24/7</title>
+    <title>Пътна помощ MAXI 24/7</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
 <body>
     <!-- Navigation Menu -->
     <nav id="navbar">
-        <div class="logo">Road Assistance MAXI</div>
+        <div class="logo">Пътна помощ MAXI</div>
         <button class="menu-toggle" onclick="toggleMenu()">☰</button>
         <ul class="menu">
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#about">За нас</a></li>
+            <li><a href="#contact">Контакти</a></li>
         </ul>
     </nav>
 
+    <!-- Overlay Navigation -->
+    <div id="overlay-menu" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">×</a>
+        <div class="overlay-content">
+            <a href="#services">Услуги</a>
+            <a href="#about">За нас</a>
+            <a href="#contact">Контакти</a>
+        </div>
+    </div>
+
     <!-- Hero Section -->
     <header class="hero">
-        <h1>Road Assistance MAXI 24/7</h1>
-        <p>Available 24/7 in Sofia and nearby regions.</p>
+        <img src="logo.png" alt="Пътна помощ MAXI Logo" class="hero-logo">
+        <h1>Пътна помощ MAXI 24/7</h1>
+        <p>Денонощна пътна помощ в гр. София и региона.</p>
         <a href="tel:+359894303029" class="call-button">📞 +359 894 30 30 29</a>
     </header>
 
     <!-- Services Section -->
     <section id="services" class="services">
-        <h2>Our Services</h2>
-        <div class="service">
-            <img src="towing.png" alt="Towing">
-            <h3>Towing</h3>
-            <p>For all types of vehicles up to 5 tons across the country.</p>
-            <a href="#" class="more-button">Learn More</a>
+        <h2>Нашите услуги</h2>
+        <div class="service-card">
+            <img src="towing.png" alt="Репатриране">
+            <h3>Репатриране</h3>
+            <p>Леки автомобили, джипове, ванове, селскостопанска техника до 5 тона.</p>
+            <a href="#" class="more-button">Виж Повече</a>
         </div>
-        <div class="service">
-            <img src="battery.png" alt="Battery Jump Start">
-            <h3>Battery Jump Start</h3>
-            <p>Get your battery boosted whenever you need it.</p>
-            <a href="#" class="more-button">Learn More</a>
+        <div class="service-card">
+            <img src="battery.png" alt="Подаване на ток">
+            <h3>Подаване на ток</h3>
+            <p>Помощ за подаване на стартов ток към акумулатора.</p>
+            <a href="#" class="more-button">Виж Повече</a>
         </div>
         <!-- Add more services as needed -->
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <h2>Contact Us</h2>
+        <h2>Контакти</h2>
         <div class="contact-info">
             <div class="info-item">
                 <span>📍</span>
-                <p>Sofia, Bulgaria</p>
+                <p>гр. София</p>
             </div>
             <div class="info-item">
                 <span>📞</span>
@@ -65,7 +76,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Road Assistance MAXI. All Rights Reserved.</p>
+        <p>&copy; 2024 Пътна помощ MAXI. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
