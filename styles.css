@@ -7,25 +7,8 @@
 
 body {
     font-family: Arial, sans-serif;
-}
-
-/* Top Bar */
-.top-bar {
-    background-color: #1A1A1A;
-    color: #fff;
-    padding: 5px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.top-bar .social span {
-    margin-right: 10px;
-}
-
-.top-bar .contact-info a {
-    color: #fff;
-    text-decoration: none;
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
 /* Navbar */
@@ -68,10 +51,6 @@ body {
     text-decoration: none;
     font-weight: bold;
     text-align: center;
-}
-
-.call-now .call-button i {
-    margin-right: 5px;
 }
 
 .menu-toggle {
@@ -152,6 +131,70 @@ body {
 
 .hero-image {
     max-width: 400px;
+}
+
+/* Services Section */
+.services {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.service-card {
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+}
+
+.service-card img {
+    width: 80px;
+    height: 80px;
+}
+
+.more-button {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Contact Section */
+.contact {
+    padding: 2rem;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #003366;
+    color: #fff;
 }
 
 /* Responsive */
